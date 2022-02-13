@@ -3,14 +3,12 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
   result = 0
   arr.each{|i| result+=i}
   result
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
   result = 0
   arr.sort! {|a,b| b <=> a}
   if arr.length()==1
@@ -22,7 +20,6 @@ def max_2_sum arr
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
   map = {}
   arr.each{ |i| 
     minus = n - i
@@ -38,12 +35,10 @@ end
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
   return "Hello, #{name}"
 end
 
 def starts_with_consonant? s
-  # YOUR CODE HERE
   if s.length() == 0
     return false
   end
@@ -64,7 +59,6 @@ def starts_with_consonant? s
 end
 
 def binary_multiple_of_4? s
-  # YOUR CODE HERE
   if s.length() == 0
     return false
   end
@@ -83,7 +77,6 @@ end
 # Part 3
 
 class BookInStock
-# YOUR CODE HERE
   attr_accessor :price, :isbn
 
   def initialize (isbn, price)
